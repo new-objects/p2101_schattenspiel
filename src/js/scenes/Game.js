@@ -6,10 +6,14 @@ export default class Game extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('sky', 'assets/sky.png');
+    this.load.image('bergwerk', 'assets/Berkwerk_Grundlage.jpg');
+    this.load.image('lichter', 'assets/Berkwerk_Lichter.png');
   }
 
   create() {
-    this.add.image(400, 300, 'sky');
+    this.bergwerk = this.add.image(0, 0, 'bergwerk').setOrigin(0);
+
+    this.lichter = this.add.image(0, 0, 'lichter').setOrigin(0);
+    this.lichter.visible = false;
   }
 }

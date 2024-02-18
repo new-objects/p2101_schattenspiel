@@ -5,13 +5,18 @@ import Game from './scenes/Game';
 
 export default new Phaser.Game({
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 200 },
+      debug: false,
     },
   },
-  scene: Game,
+  scale: {
+    mode: Phaser.Scale.FIT,
+    parent: 'game',
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    width: 1280,
+    height: 720,
+  },
+  scene: [Game],
 });
