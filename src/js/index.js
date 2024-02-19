@@ -14,7 +14,6 @@ export default new Phaser.Game({
   scale: {
     mode: Phaser.Scale.FIT,
     parent: 'game',
-    autoCenter: Phaser.Scale.CENTER_BOTH,
     width: 1280,
     height: 720,
   },
