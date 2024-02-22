@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@new-objects/libs": "^0.1.6",
-    "phaser": "^3.60.0"
+    "phaser": "^3.80.0"
   },
   "repository": {
     "type": "git",
